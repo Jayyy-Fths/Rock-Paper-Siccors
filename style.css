@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, blue, indigo, purple, pink);
+    background-size: 400% 400%;
+    animation: gradientShift 10s infinite;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .instructions {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .button-container {
+    margin: 20px 0;
+  }
+  
+  .game-button {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background: #f5f5f5;
+    transform: scale(1.1);
+  }
+  
+  .cheat-button {
+    background: #ffcc00;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .cheat-button:hover {
+    background: #ffd633;
+    transform: scale(1.1);
+  }
+  
+  .scoreboard {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #222;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result.win {
+    color: #4CAF50;
+  }
+  
+  .result.lose {
+    color: #E53935;
+  }
+  
+  .result.tie {
+    color: #FFC107;
+  }
+  
