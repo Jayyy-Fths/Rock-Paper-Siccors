@@ -9,9 +9,7 @@ function playGame(playerChoice) {
 
 function cheat() {
   const choices = ['rock', 'paper', 'scissors'];
-
-  // Cheat: Always pick the winning move
-  const playerChoice = 'rock'; // Default (can be anything; it will always win)
+ // Default (can be anything; it will always win)
   let computerChoice;
 
   if (playerChoice === 'rock') {
@@ -46,10 +44,8 @@ function displayResult(playerChoice, computerChoice) {
     computerScore++;
   }
 
-  // Update the result text
   resultDisplay.textContent = result;
 
-  // Update the scoreboard
   document.getElementById('playerScore').textContent = playerScore;
   document.getElementById('computerScore').textContent = computerScore;
 }
